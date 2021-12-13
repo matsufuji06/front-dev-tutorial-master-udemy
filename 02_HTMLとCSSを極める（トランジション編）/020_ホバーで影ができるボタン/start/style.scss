@@ -15,8 +15,15 @@ $cBlack: black;
   cursor: pointer;
   transition: all 0.3s;
 
-  &:hover {
-    background-color: $cBlack;
-    color: $cWhite;
+  &.float {
+    &:hover {
+      // 引数：x軸・y軸・影の濃さ・透明度・色
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
   }
+
+  // &:hover {
+  //   background-color: $cBlack;
+  //   color: $cWhite;
+  // }
 }
