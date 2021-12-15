@@ -39,6 +39,11 @@ $cBlack: black;
           letter-spacing: 3px;
         }
       }
-      
+      &.shadow {
+        &:hover {
+          box-shadow: 5px 5px 0 0 black;
+          transform: translate(-2.5px, -2.5px);
+        }
+      }   
   }
 }
