@@ -25,7 +25,20 @@ $cBlack: black;
         height: 100%;
         border: 1px solid $cBlack;
         line-height: 48px;
+        text-align: center;
+      }
 
+      & .hovering {
+        background-color: $cBlack;
+        color: $cWhite;
+        transform: rotateX(90deg);
+        transform-origin: center center -25px;
+      }
+      & .default {
+        background-color: $cWhite;
+        color: $cBlack;
+        transform: rotateX(0);
+        transform-origin: center center -25px;
       }
     }
   }
