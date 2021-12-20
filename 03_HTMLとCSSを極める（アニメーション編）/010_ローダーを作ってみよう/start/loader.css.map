@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACjB,UAAU,EAAE,MAAM;CAEnB",
+    "sources": [
+        "loader.scss"
+    ],
+    "names": [],
+    "file": "loader.css"
+}
