@@ -10,6 +10,13 @@ $cBlack: black;
     border-radius: 50%;
     animation: sk-bouncedelay 1.4s infinite;
   }
+
+  & .bounce1 {
+    animation-delay: -0.32s;
+  }
+  & .bounce2 {
+    animation-delay: -0.16s;
+  }
 }
 
 @keyframes sk-bouncedelay {
