@@ -1,8 +1,6 @@
 @charset "UTF-8";
 .try {
   /** ここに記述しよう */
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   -webkit-perspective-origin: center center;
           perspective-origin: center center;
 }
