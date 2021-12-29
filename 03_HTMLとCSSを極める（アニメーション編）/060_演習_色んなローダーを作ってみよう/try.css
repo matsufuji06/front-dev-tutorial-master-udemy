@@ -62,5 +62,19 @@
   background-color: #333;
   border-radius: 50%;
   margin: 100px auto;
+  -webkit-animation-name: sk-rotateplane2;
+          animation-name: sk-rotateplane2;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 /*# sourceMappingURL=try.css.map */

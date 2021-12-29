@@ -16,23 +16,23 @@
       $iteration-count: infinite,
       
       )
-    }
+  }
     
-    @keyframes sk-rotateplane2 {
+  @keyframes sk-rotateplane2 {
     0% {
       transform: perspective(120px) rotateX(0);
     }
-    
+      
     50% {
       transform: perspective(120px) rotateX(-180deg) rotateY(0);
       
     }
     100% {
       transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
-
+      
     }
   }
-
+  
   .double-spinner {
     width: 40px;
     height: 40px;
@@ -40,9 +40,13 @@
     border-radius: 50%;
     margin: 100px auto;
     
+    @include animation(
+      
+      
+    )
   }
-
+  
   .rect-spinner {
-
+    
   }
 }
