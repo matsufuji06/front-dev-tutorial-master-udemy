@@ -10,6 +10,7 @@ $cWhite: white;
     height: 2px;
     display: block;
     margin-bottom: 9px;
+    transition: transform 0.7s;
     &:last-child {
       margin-bottom: 0;
     }
@@ -21,6 +22,15 @@ $cWhite: white;
   & .mobile-menu-icon {
     & > span {
       background-color: $cWhite;
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(-18px) scaleX(0);
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+      }
     }
   }
 
