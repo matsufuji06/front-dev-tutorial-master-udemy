@@ -18,4 +18,8 @@
 .menu-open {
   background-color: black;
 }
+
+.menu-open .mobile-menu-icon > span {
+  background-color: white;
+}
 /*# sourceMappingURL=style.css.map */
