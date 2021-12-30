@@ -4,6 +4,8 @@ $cWhite: white;
 .mobile-menu-icon {
   background-color: transparent;
   border: none;
+  outline: none !important;
+  cursor: pointer;
   & > span {
     background-color: $cBlack;
     width: 35px;
