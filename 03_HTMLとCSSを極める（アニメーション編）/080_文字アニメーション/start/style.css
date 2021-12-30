@@ -16,6 +16,11 @@ body {
           transform: translate(-50% -50%);
   color: white;
   font-weight: bold;
+  opacity: 0;
+}
+
+.animate-title.inview {
+  opacity: 1;
 }
 
 .animate-title.inview .char {
