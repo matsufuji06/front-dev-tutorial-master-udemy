@@ -26,7 +26,7 @@ $cWhite: white;
         transform: translateY(11px) rotate(135deg);
       }
       &:nth-child(2) {
-        transform: translateX(-18px) scaleX(0);
+        transform: scaleX(0);
       }
       &:nth-child(3) {
         transform: translateY(-11px) rotate(-135deg);
