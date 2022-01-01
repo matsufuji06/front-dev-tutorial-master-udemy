@@ -17,11 +17,11 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: teal;
+    background-color: #eaebe6;
   }
   &.inview {
     &::after {
-      @include animation($name: kf-cover-slide);
+      @include animation($name: kf-cover-slide, $duration: 1.6s, $timing-function: ease-in-out);
       
     }
   }
@@ -50,7 +50,7 @@ img {
   
   .inview & {
     opacity: 1;
-    @include animation($name: kf-img-show);
+    @include animation($name: kf-img-show, $duration: 1.6s, $timing-function: ease-in-out, $fill-mode: none);
   }
 }
 
