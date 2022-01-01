@@ -3,6 +3,12 @@
     transition: all 0.8s;
     opacity: 0;
   }
+  &.inview {
+    & .item {
+      opacity: 1;
+
+    }
+  }
 }
 
 @each $var in list {

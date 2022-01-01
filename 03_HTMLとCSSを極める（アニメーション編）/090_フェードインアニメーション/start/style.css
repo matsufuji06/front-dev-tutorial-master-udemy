@@ -4,6 +4,10 @@
   opacity: 0;
 }
 
+.appear.up.inview .item {
+  opacity: 1;
+}
+
 img {
   max-width: 80%;
 }
