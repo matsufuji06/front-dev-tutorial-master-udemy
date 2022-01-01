@@ -60,4 +60,8 @@ img {
     right: 0;
   }
 }
+
+.img-zoom {
+  opacity: 0;
+}
 /*# sourceMappingURL=style.css.map */
