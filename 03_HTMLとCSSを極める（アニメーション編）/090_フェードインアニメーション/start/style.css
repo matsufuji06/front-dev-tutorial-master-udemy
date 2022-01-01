@@ -1,3 +1,9 @@
+.appear.up .item {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
 img {
   max-width: 80%;
 }
