@@ -1,8 +1,24 @@
-.appear.up {
+// translateでの上下左右の動きを変数として格納し、each文で表現
+$pattern: (
+  "up": translateY(6px),
+  "down": translateY(-6px),
+  "right": translateX(-40px),
+  "left": translateX(40px)
+
+  );
+  
+  @each $key, $value in $pattern {
+    .appear.#{$key} {
+      & .item {
+        transform: $value;
+      }
+    }
+  }
+// ------------------------------------------------------------
+.appear {
   & .item {
     transition: all 0.8s;
     opacity: 0;
-    transform: translateY(6px);
   }
   &.inview {
     & .item {
@@ -16,8 +32,4 @@
       }
     }
   }
-}
-
-@each $var in list {
-  
 }
