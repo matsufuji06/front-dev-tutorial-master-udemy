@@ -8,6 +8,7 @@ img {
 // 背景画像のスタイル&アニメーション---------------
 .cover-slide {
   position: relative;
+  overflow: hidden;
   &::after {
     content: '';
     position: absolute;
@@ -62,6 +63,7 @@ img {
   }
   50.1% {
     opacity: 1;
+    transform: scale(1.5);
   }
   100% {
     opacity: 1;
