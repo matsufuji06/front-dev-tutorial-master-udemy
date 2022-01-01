@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+img {
+  max-width: 100%;
+}
+
+.cover-slide {
+  position: relative;
+}
+
+.cover-slide::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: teal;
+}
+/*# sourceMappingURL=style.css.map */
