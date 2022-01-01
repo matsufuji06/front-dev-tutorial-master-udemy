@@ -1,5 +1,6 @@
 img {
   max-width: 100%;
+  vertical-align: bottom;
 }
 
 .cover-slide {
@@ -91,6 +92,9 @@ img {
     opacity: 0;
   }
   50% {
+    opacity: 0;
+  }
+  50.1% {
     opacity: 1;
   }
   100% {
@@ -103,6 +107,9 @@ img {
     opacity: 0;
   }
   50% {
+    opacity: 0;
+  }
+  50.1% {
     opacity: 1;
   }
   100% {
