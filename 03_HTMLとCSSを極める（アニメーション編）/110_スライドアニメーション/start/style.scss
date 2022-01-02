@@ -50,7 +50,11 @@ img {
   
   .inview & {
     opacity: 1;
+    transition: transform 0.3s ease;
     @include animation($name: kf-img-show, $duration: 1.6s, $timing-function: ease-in-out, $fill-mode: none);
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
