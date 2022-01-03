@@ -177,7 +177,7 @@ img {
   height: 100%;
 }
 
-.bg-img-zoom::before {
+.bg-img50 {
   content: '';
   display: block;
   padding-top: 50%;
