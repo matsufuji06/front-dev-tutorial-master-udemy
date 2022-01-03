@@ -113,6 +113,11 @@ img {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 200px;
-  @extend .img-zoom
+  height: 100%;
+  @extend .img-zoom;
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 50%;
+  }
 }
