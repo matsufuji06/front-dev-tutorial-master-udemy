@@ -1,9 +1,10 @@
 const person = {
-  name: ["Matsufuji", "Kakara"],
+  name: ['Matsufuji ', 'Kakara'],
   age: 27,
-  interest: {
-    sports: "soccer",
-    music: "namedaruma"
+  gender: 'male',
+  interests: {
+    sports: 'soccer',
+    music: 'hiphop'
   },
   getFullName: function() {
     console.log(this.name[0] + this.name[1]);
@@ -11,6 +12,9 @@ const person = {
 };
 
 console.log(person.name[0]);
-person.interest.music = "舐達磨";
-console.log(person.interest.music);
+console.log(person.interests.music);
+
+person[`age`] = 12;
+console.log(person.age);
+
 person.getFullName();
