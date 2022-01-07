@@ -16,10 +16,15 @@ const todos = [
   }
 ]
 
-for(let todo of todos) {
-
+for(let i = 0; i < todos.length; i++) {
+  let todo = todos[i];
   if(todo.completed === true) {
-    console.log(todo.title);
+    console.log(i, todo.title);
+  }
+}
 
+for(let todo of todos) {
+  if(todo.completed === true) {
+    console.log(todo.id, todo.title);
   }
 }
