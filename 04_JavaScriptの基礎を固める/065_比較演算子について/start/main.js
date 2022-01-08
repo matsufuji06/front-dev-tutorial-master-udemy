@@ -5,3 +5,12 @@ if(false) {
 } else {
   console.log('this is false');
 }
+
+const num = Number(false);
+console.log(num);
+
+if(0 == '0' || 0 === '0') {
+  console.log('this is true');
+} else {
+  console.log('this is false');
+}
