@@ -1,4 +1,6 @@
 const btn = document.querySelector('#btn');
-btn.addEventListener('click', function() {
+
+const hello = function() {
   alert('hello');
-})
+};
+btn.addEventListener('click', hello);
