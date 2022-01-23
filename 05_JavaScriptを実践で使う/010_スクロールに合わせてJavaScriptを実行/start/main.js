@@ -14,7 +14,13 @@ const cb = function(entries, observer) {
     }
   });
   // alert('intersecting');
-
 }
-const io = new IntersectionObserver(cb);
+
+const options = {
+  root: null,
+  rootMargin: "-100px 0px",
+  threshold: [0, 0.5, 1]
+};
+
+const io = new IntersectionObserver(cb, options);
 io.observe(child);
