@@ -1,5 +1,8 @@
-$cMenuClose: black;
-$cMenuOpen: white;
+$cWhite: white;
+$cBlack: black;
+$cMenuClose: $cBlack;
+$cMenuOpen: $cWhite;
+$cSubtitle: #53535353;
 
 body {
     margin: 0;
@@ -21,17 +24,11 @@ body {
     align-items: center;
 }
 
-.menu-open {
-    & #container {
-        transform: translate(-300px, 60px);
-        box-shadow: 0px 8px 40px -10px rgba(0, 0, 0, 0.8);
-    }
-}
-
 .mobile-menu {
     position: fixed;
     right: 0px;
     top: 60px;
+    width: 300px;
     &__main {
         padding: 0;
         perspective: 2000px;
@@ -43,6 +40,7 @@ body {
         transform: translate3d(0, 0, -1000px);
         padding: 0px 40px;
         transition: transform 0.3s, opacity 0.2s;
+        // opacity: 0;
     }
     &__link {
         display: block;
@@ -52,12 +50,24 @@ body {
     }
 }
 
+.main-title {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.sub-title {
+    display: block;
+    font-size: 14px;
+    color: $cSubtitle;
+    
+}
+
 .mobile-menu__btn {
     background-color: unset;
     border: none;
     outline: none !important;
     cursor: pointer;
-
+    
     & > span {
         background-color: $cMenuClose;
         width: 35px;
@@ -65,7 +75,7 @@ body {
         display: block;
         margin-bottom: 9px;
         transition: transform 0.7s;
-
+        
         &:last-child {
             margin-bottom: 0;
         }
@@ -73,6 +83,23 @@ body {
 }
 
 .menu-open {
+    & #container {
+        transform: translate(-300px, 60px);
+        box-shadow: 0px 8px 40px -10px rgba(0, 0, 0, 0.8);
+    }
+
+    & .mobile-menu {
+        &__item {
+            transform: none;
+            opacity: 1;
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    transition-delay: $i * 0.07s;
+                }
+            }
+        }
+    }
+
     & .mobile-menu__btn {
         & > span {
             background-color: $cMenuClose;
