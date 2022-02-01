@@ -39,6 +39,7 @@ body {
         opacity: 0;
         visibility: hidden;
         transition: opacity 1s;
+        cursor: pointer;
     }
     &__main {
         padding: 0;

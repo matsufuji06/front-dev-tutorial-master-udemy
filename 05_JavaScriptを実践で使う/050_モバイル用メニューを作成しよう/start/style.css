@@ -43,6 +43,7 @@ body {
   visibility: hidden;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  cursor: pointer;
 }
 
 .mobile-menu__main {
