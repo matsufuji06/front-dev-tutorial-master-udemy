@@ -22,6 +22,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
+  overflow: hidden;
 }
 
 .hero__downarrow {
@@ -29,6 +30,20 @@
   left: 0;
   bottom: 0;
   width: 6px;
+  -webkit-animation-name: kf-arrow-anime;
+          animation-name: kf-arrow-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hero__scrolltext {
@@ -39,5 +54,31 @@
   font-size: 1.2em;
   top: 11px;
   left: -8px;
+}
+
+@-webkit-keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
