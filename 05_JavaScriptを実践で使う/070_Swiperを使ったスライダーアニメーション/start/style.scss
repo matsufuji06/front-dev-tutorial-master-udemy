@@ -1,5 +1,19 @@
+$cWhite: white;
+$cBlack: black;
+
 .swiper {
   width: 600px;
-  /* width: 100%; */
+  // width: 100%;
   height: 300px;
+}
+
+.hero {
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $cWhite;
+    font-size: 25px;
+  }
 }
