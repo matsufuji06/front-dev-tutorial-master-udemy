@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const hero = new HeroSlider();
+  hero.start();
+  setTimeout(() => {
+    hero.stop();
+  }, 5000);
 });
 
 class HeroSlider {
@@ -23,10 +27,12 @@ class HeroSlider {
           slidesPerView: 2
         }
       },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false
-      }
+
+      // autoplay: {
+        
+      // }
+
+
 
       // If we need pagination
       // pagination: {
@@ -44,5 +50,17 @@ class HeroSlider {
       //   el: '.swiper-scrollbar',
       // },
     });
+  }
+
+  start() {
+    this.swiper.params.autoplay = {
+      delay: 4000,
+      disableOnInteraction: false
+    }
+    this.swiper.autoplay.start();
+  }
+  stop() {
+    this.swiper.autoplay.stop();
+
   }
 };
