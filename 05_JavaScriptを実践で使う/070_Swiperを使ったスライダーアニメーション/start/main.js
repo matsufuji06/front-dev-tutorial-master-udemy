@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 class HeroSlider {
   constructor() {
-    this.swiper = new Swiper('.swiper', {
+    this.swiper = this._initSwiper();
+
+  }
+
+  _initSwiper() {
+    return new Swiper('.swiper', {
       // Optional parameters
       // direction: 'vertical',
       loop: true,
