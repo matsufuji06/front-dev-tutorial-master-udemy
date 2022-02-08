@@ -1,0 +1,34 @@
+@import 'breakpoints/base';
+
+// ※小さい順に並べる
+
+// スマホ横
+@media screen and (min-width: 480px) {
+  @import 'breakpoints/480up';
+}
+
+// タブレット
+@media screen and (min-width: 600px) {
+  @import 'breakpoints/600up';
+}
+
+// タブレット横or小さいデスクトップ
+@media screen and (min-width: 960px) {
+  @import 'breakpoints/960up';
+}
+
+// 通常PC
+@media screen and (min-width: 1280px) {
+  @import 'breakpoints/1280up';
+}
+
+// 高解像のレディナディスプレイ
+@media screen and (min-resolution: 192dpi),
+  (-webkit-min-devise-pixel-ratio: 2) {
+    @import 'breakpoints/2x';
+  }
+
+// プリント時
+@media print {
+  @import 'breakpoints/print';
+}
