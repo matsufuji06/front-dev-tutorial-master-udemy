@@ -193,6 +193,7 @@ main {
 }
 
 .houses {
+  // ↓htmlのクラスが.house .content-widthになる
   @extend .content-width;
   @extend .mb-lg;
 
