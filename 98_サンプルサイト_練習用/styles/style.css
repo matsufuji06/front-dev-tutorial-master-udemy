@@ -1168,6 +1168,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         flex-basis: 50%;
     margin-bottom: 60px;
   }
+  .houses__item:nth-child(1) {
+    padding-right: 20px;
+  }
+  .houses__item:nth-child(3) {
+    padding-right: 20px;
+  }
+  .houses__item:nth-child(5) {
+    padding-right: 20px;
+  }
   .popular__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
