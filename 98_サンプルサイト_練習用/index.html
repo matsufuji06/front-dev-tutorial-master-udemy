@@ -10,61 +10,86 @@
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     
-  <!-- Google Fontsの読み込み -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <!-- ---------------------- -->
-
-  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/vendors/swiper.min.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-</head>
-<body>
-  <div id="global-container">
-    <div id="container">
-      <div id="content">
-        <div class="hero">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="hero__title">Enjoy Rich</div>
-                <img src="images/image-1.jpg" alt="">
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- ---------------------- -->
+    
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div id="content">
+          <div class="hero">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="hero__title">Enjoy Rich</div>
+                  <img src="images/image-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Fantastic</div>
+                  <img src="images/image-2.jpg" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="hero__title">Experience</div>
+                  <img src="images/image-3.jpg" alt="">
+                </div>
+                
               </div>
-              <div class="swiper-slide">
-                <div class="hero__title">Fantastic</div>
-                <img src="images/image-2.jpg" alt="">
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="hero__title">Experience</div>
-                <img src="images/image-3.jpg" alt="">
-              </div>
-          
-            </div>
             <div class="hero__footer">
               <img class="hero__downarrow" src="images/arrow.svg" alt="">
               <span class="hero__scrolltext">scroll</span>
             </div>
             <!-- If we need pagination -->
             <!-- <div class="swiper-pagination"></div> -->
-          
+            
             <!-- If we need navigation buttons -->
             <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-          
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
-          </div>
+              <div class="swiper-button-next"></div> -->
+              
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
 
-        </div>
-        <div id="main-content">
-          <main>
+          </div>
+          <div id="main-content">
+            <main>
+            <section class="travel">
+              <div class="travel__inner">
+                <div class="travel__img cover-slide hover-darken">
+                  <img class="img-zoom" src="images/image-travel.jpg" alt="">
+                  
+                </div>
+                <div class="travel__texts">
+                  <div class="travel__texts-inner">
+                    <div class="travel__title main-title">
+                      <span class="purple">Travel</span> <span>The World</span>
+                    </div>
+                    <div class="travel__sub sub-title">
+                      世界中を旅しよう
+                    </div>
+                    <div class="travel__description">
+                      <p>世界１５０カ国で<br>利用できる民泊サービスです。</p>
+                      <p>あなたの望む宿がきっと見つかります。</p>
+                    </div>
+                    <div class="travel__btn">
+                      <button class="btn filled">もっと詳しく</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section class="houses content-width">
               <div>
                 <h2 class="main-title">Find Your houses</h2>
