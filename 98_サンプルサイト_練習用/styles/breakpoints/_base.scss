@@ -155,7 +155,13 @@ main {
       transition: transform 0.3s ease 1.6s;
       transform-origin: right;
     }
+    
+    &.inview {
+      &::before {
+        transform: translateY(-50%);
 
+      }
+    }
     
   }
 
